@@ -1,5 +1,6 @@
 JSC.Chart('chartDiv', {
     type: 'horizontal column',
+    title_label_text: 'Number of Subscribers Per Course Category',
     series: [
        {
           points: [
