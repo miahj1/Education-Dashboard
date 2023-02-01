@@ -13,4 +13,4 @@ JSC.Chart('chartDiv', {
     ]
  });
  
- Chart.defaults.borderColor = '#36A2EB';
+ Chart.defaults.borderColor = '#000000';
