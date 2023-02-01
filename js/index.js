@@ -1,6 +1,8 @@
 JSC.Chart('chartDiv', {
     type: 'horizontal column',
     title_label_text: 'Number of Subscribers Per Course Category',
+    borderColor: '#27ae60',
+    backgroundColor: '#2ecc71',
     series: [
        {
           points: [
@@ -12,5 +14,3 @@ JSC.Chart('chartDiv', {
        }
     ]
  });
- 
- Chart.defaults.borderColor = '#000000';
