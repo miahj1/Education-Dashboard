@@ -1,0 +1,46 @@
+html{
+    background-color: #f5f5f5;
+}
+
+.header{
+    height: 10vh;
+    position: relative;
+}
+
+.logo{
+    width: 140px;
+}
+
+body{
+    padding: 2% 8%;
+}
+
+figure figcaption{
+    align-content: center;
+}
+
+.flex-parent-element{
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.flex-child-element{
+    flex: 1;
+    margin: 12px;
+    padding: 2% 2% 2% 2%;
+    border: 1px solid rgb(214, 214, 214);
+    background-color: white;
+}
+  
+.flex-child-element:first-child{
+    margin-right: 10px;
+}
+
+.flex-child-element:hover{
+    border: 1px solid #a435f0;
+}
+
+.pies{
+    max-width: 1210px;
+}
+

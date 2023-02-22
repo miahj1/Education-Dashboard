@@ -2,10 +2,76 @@
 <html>
    <head>
       <title>Udemy: Static Education Dashboard</title>
+      <link href="style.css" rel="stylesheet" type="text/css">    
    </head>
    <body>
-      <div id="chartDiv" style="width:50%; height:300px; margin:0 auto;"></div>
-   </body>
-   <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
-   <script src="js/index.js"></script>
+        <div class="header">
+            <nav>
+                <img src="udemylogo.png" class="logo">
+            </nav>
+        </div>
+
+         <div class="flex-parent-element">
+            <div class="flex-child-element magenta">
+                Out of all the types of course selections offered at Udemy--Web Development looks to be the most popular with a large total number of subscribers: over 8 million.
+                <figure>
+                    <img src="subs.png" alt="Subscribers">
+                    <figcaption> <strong>Fig. 1:</strong> Matplotlib graph of the number subscribers in each Udemy category.</figcaption>
+                </figure>            
+            </div>
+
+            <div class="flex-child-element green">
+                Compared to their competition Udemy has the least amount of searches from the past 4 years, LinkedIn Learning formerly Lynda ranks the highest.
+                <figure>
+                    <img src="competitors.png" alt="Competitors">
+                    <figcaption><strong>Fig. 2:</strong> Google search trend history of competitors in the education market.</figcaption>
+                </figure>            
+            </div>
+
+            <div class="flex-child-element yellow">
+                Udemy offers cources in different ranges of prices, but they offer more courses for $20.
+                <figure>
+                    <img src="pies.png" alt="Business Courses" class="pies">
+                </figure>            
+            </div>
+
+            <div class="flex-child-element purple">
+                <p>The scatter plots of the number of subscribers vs number of reviews.</p>
+
+                <select id="scatter-select" onchange="changePlotImg">
+                    <option value="default">Select an Option</option>
+                    <option value="business">Business</option>
+                    <option value="design">Design</option>
+                    <option value="music">Music</option>
+                    <option value="webdev">Web Development</option>
+                </select> 
+                <img id="image" src="">
+            </div>
+
+            <div class="flex-child-element magenta">
+                <p>The horizontal bar graphs of the number of subscribers for each specific course in each category.</p>
+
+                <select id="barh-select" onchange="changeGraphImg">
+                    <option value="default">Select an Option</option>
+                    <option value="business">Business</option>
+                    <option value="design">Design</option>
+                    <option value="music">Music</option>
+                    <option value="webdev">Web Development</option>
+                </select> 
+                <img id="graphs" src="">
+            </div>
+
+            <script src="js/cycler.js"></script>
+
+            <div class="flex-child-element crimson">
+                <p><strong>Discussion:</strong> The code for the static dashboard can be found on github: it is primarily created using HTML and CSS.
+                   The google collab notebook I used to generate the charts and analyze data in Python using Pandas.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p><center><a href="mailto:jabedmiah05@gmail.com">Contact Me</a> | Github Repository | <a href="https://colab.research.google.com/drive/1ZmB03ic4D9wAXqdrD7Cyo3q8onErFBDu?usp=sharing">Google Collab Notebook</a></center></p>
+          </footer>          
+    </body>
 </html>
