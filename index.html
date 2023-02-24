@@ -13,10 +13,11 @@
 
          <div class="flex-parent-element">
             <div class="flex-child-element magenta">
-                Out of all the types of course selections offered at Udemy--Web Development looks to be the most popular with a large total number of subscribers: over 8 million.
+                Out of all the types of course selections offered at Udemy--Web Development looks 
+                to be the most popular with a large total number of subscribers: over 8 million.
                 <figure>
                     <img src="subs.png" alt="Subscribers">
-                    <figcaption> <strong>Fig. 1:</strong> Matplotlib graph of the number subscribers in each Udemy category.</figcaption>
+                    <figcaption> <strong>Fig. 1:</strong> Matplotlib graph of the number subscribers in each course category.</figcaption>
                 </figure>            
             </div>
 
@@ -36,7 +37,7 @@
             </div>
 
             <div class="flex-child-element purple">
-                <p>The scatter plots of the number of subscribers vs number of reviews.</p>
+                <p>Users are prompted to leave a review after 12-15 minutes of course content is viewed.</p>
 
                 <select id="scatter-select" onchange="changePlotImg">
                     <option value="default">Select an Option</option>
@@ -45,7 +46,10 @@
                     <option value="music">Music</option>
                     <option value="webdev">Web Development</option>
                 </select> 
-                <img id="image" src="">
+                <figure>
+                    <center><img id="image" src="">
+                    <figcaption><strong>Fig. 4:</strong> Subscribers vs reviews for four course categories.</figcaption></center>
+                </figure>
             </div>
 
             <div class="flex-child-element magenta">
@@ -58,20 +62,24 @@
                     <option value="music">Music</option>
                     <option value="webdev">Web Development</option>
                 </select> 
-                <img id="graphs" src="">
+                <center>
+                    <img id="graphs" src="">
+                    <figure>
+                        <figcaption><strong>Fig. 5:</strong> Subscribers for each specific course in each category.</figcaption>
+                    </figure>
+                </center>
             </div>
 
             <script src="js/cycler.js"></script>
-
-            <div class="flex-child-element crimson">
-                <p><strong>Discussion:</strong> The code for the static dashboard can be found on github: it is primarily created using HTML and CSS.
-                   The google collab notebook I used to generate the charts and analyze data in Python using Pandas.
-                </p>
-            </div>
         </div>
 
         <footer>
-            <p><center><a href="mailto:jabedmiah05@gmail.com">Contact Me</a> | Github Repository | <a href="https://colab.research.google.com/drive/1ZmB03ic4D9wAXqdrD7Cyo3q8onErFBDu?usp=sharing">Google Collab Notebook</a></center></p>
+            <p>
+                <center>
+                   <a href="mailto:jabedmiah05@gmail.com">Contact Me</a> | 
+                   <a href="https://github.com/miahj1/Education-Dashboard">Github Repository</a> | 
+                   <a href="https://colab.research.google.com/drive/1ZmB03ic4D9wAXqdrD7Cyo3q8onErFBDu?usp=sharing">Google Collab Notebook</a>
+                </center></p>
           </footer>          
     </body>
 </html>
